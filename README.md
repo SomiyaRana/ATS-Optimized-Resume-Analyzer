@@ -1,1 +1,2 @@
+CareerCraft: ATS-Optimized Resume Analyzer using Gemini Model
 CareerCraft is an advanced resume analysis tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). Leveraging the powerful Gemini Model and natural language processing (NLP) techniques, CareerCraft parses, scores, and provides actionable feedback to enhance resumes, making them more likely to pass through ATS screening processes.
