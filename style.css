@@ -1,0 +1,35 @@
+/* style.css */
+
+.stApp {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: #0E76A8;
+  font-weight: bold;
+}
+
+button {
+  background-color: #0E76A8 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+}
+
+.stAlert-success {
+  background-color: #e0ffe0;
+  border-left: 5px solid #2ecc71;
+}
+
+.faq-question {
+  color: #0E76A8;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.faq-answer {
+  margin-bottom: 1.2rem;
+}
