@@ -1,7 +1,8 @@
-#libraries need to be installed
+# CareerCraft - ATS Resume Analyzer Requirements
+
 streamlit
-streamlit_extras
-google-genrativeai
+google-generative ai
 python-dotenv
 PyPDF2
 Pillow
+pdf2image
