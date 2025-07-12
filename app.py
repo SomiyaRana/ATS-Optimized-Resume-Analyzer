@@ -11,18 +11,22 @@ import google.generativeai as genai
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+# Load external CSS
+def load_css(file_name="style.css"):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css()  # Load custom styles
+
 def get_gemini_response(input_text, pdf_content, prompt):
-    model = genai.GenerativeModel('gemini-1.5-flash')  # Updated model
+    model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content([input_text, pdf_content[0], prompt])
     return response.text
 
 def input_pdf_setup(uploaded_file):
     if uploaded_file is not None:
-        # Convert the PDF to images
         images = pdf2image.convert_from_bytes(uploaded_file.read())
         first_page = images[0]
-
-        # Convert the first page image to bytes
         img_byte_arr = io.BytesIO()
         first_page.save(img_byte_arr, format='JPEG')
         img_byte_arr = img_byte_arr.getvalue()
@@ -30,7 +34,7 @@ def input_pdf_setup(uploaded_file):
         pdf_parts = [
             {
                 "mime_type": "image/jpeg",
-                "data": base64.b64encode(img_byte_arr).decode()  # Encode to base64
+                "data": base64.b64encode(img_byte_arr).decode()
             }
         ]
         return pdf_parts
@@ -78,7 +82,6 @@ with col5:
     if uploaded_file is not None:
         st.success("PDF Uploaded Successfully!")
 
-    # Define prompts for the Generative Model
     input_prompt_evaluation = """
     You are an experienced Technical Human Resource Manager. Your task is to review the provided resume against the job description. 
     Please share your professional evaluation on whether the candidate's profile aligns with the role. 
@@ -124,7 +127,7 @@ faq = {
 }
 
 for question, answer in faq.items():
-    st.write(f"**{question}**: {answer}")
+    st.markdown(f'<p class="faq-question">{question}</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="faq-answer">{answer}</p>', unsafe_allow_html=True)
 
 # End of the Streamlit App
-
