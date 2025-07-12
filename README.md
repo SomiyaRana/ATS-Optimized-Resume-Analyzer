@@ -1,61 +1,111 @@
-🧠 CareerCraft – Your Smart ATS Resume Analyzer!
-Tired of getting ghosted after submitting your resume? CareerCraft is an intelligent and sleek Streamlit application that helps you analyze and optimize your resume for Applicant Tracking Systems (ATS) using Google’s Gemini API. Upload your resume, and get instant feedback on how to make it stand out — with AI-powered suggestions tailored to job descriptions.
+# 🧠 CareerCraft – Your Smart ATS Resume Analyzer!
 
-🔍 Why CareerCraft?
-Recruiters often never see your resume if it doesn’t pass through ATS filters. CareerCraft makes sure your hard work gets noticed by giving you a detailed ATS score, section-wise breakdown, and improvement suggestions — all powered by AI. Whether you're a fresher or a job switcher, this app boosts your shortlisting chances.
+**Tired of getting ghosted after submitting your resume?**  
+CareerCraft is an intelligent and sleek **Streamlit** application that helps you analyze and optimize your resume for **Applicant Tracking Systems (ATS)** using **Google’s Gemini API**.
 
-🚀 Key Features
+Just upload your resume, and receive **AI-powered insights** to make it stand out — tailored to job descriptions for better shortlisting chances.
 
-✨ PDF Upload – Upload your resume in PDF format and get instant analysis.
+---
 
-📊 ATS Compatibility Score – Get a detailed score showing how well your resume performs in an ATS.
+## 🔍 Why CareerCraft?
 
-🧠 AI-Powered Suggestions – Gemini API reviews your resume and recommends:
+Recruiters often never see your resume if it doesn’t pass through ATS filters.  
+**CareerCraft** ensures your resume makes it through by providing:
 
-Missing keywords
+- ✅ An ATS score  
+- ✅ Section-wise breakdown  
+- ✅ Personalized improvement tips powered by AI  
 
-Formatting tips
+Whether you're a **fresher** or a **job switcher**, this app helps you get noticed.
 
-Tone and structure improvements
+---
 
-📄 Job Description Matching – Paste a job description and see how well your resume aligns with it.
+## 🚀 Key Features
 
-🖥️ Streamlit UI – Lightweight, fast, and user-friendly interface.
+### ✨ PDF Upload  
+Upload your resume in **PDF format** and get instant feedback.
 
-🔒 Privacy First – No data is stored. Everything runs in real-time with zero logging.
+### 📊 ATS Compatibility Score  
+See how well your resume performs in an ATS screening.
 
-🧰 Tech Stack
+### 🧠 AI-Powered Suggestions  
+Get real-time improvements using **Gemini API**, including:
+- Missing or weak **keywords**
+- Formatting & design issues
+- Tone, grammar, and section improvements
 
-👩‍💻 Frontend: Streamlit
-🐍 Backend: Python
-🤖 AI Engine: Gemini API
-📄 PDF Parser: PyPDF2
-🔐 Secrets Management: python-dotenv
+### 📄 Job Description Matching  
+Paste any job description to compare and improve keyword alignment.
 
-📸 How It Works
+### 🖥️ Clean Streamlit UI  
+Lightweight, fast, and responsive interface for seamless experience.
 
-📤 Upload your resume (PDF format).
+### 🔒 Privacy-First  
+Your data is never stored. Everything runs in real-time — **no logging, no saving**.
 
-🤖 Gemini API analyzes formatting, keywords, and structure.
+---
 
-📈 Get your ATS score and personalized suggestions.
+## 🧰 Tech Stack
 
-📝 Paste a job description (optional) to compare and improve keyword alignment.
+- 👩‍💻 **Frontend:** Streamlit  
+- 🐍 **Backend:** Python  
+- 🤖 **AI Engine:** Gemini API (Google)  
+- 📄 **PDF Parser:** PyPDF2  
+- 🔐 **Secrets Management:** python-dotenv  
 
-✅ Perfect For
+---
 
-🎓 Students & Freshers
-💼 Job Seekers
-🎯 Resume Coaches
-🏫 College Placement Cells
+## 📸 How It Works
 
-💡 Future Scope
+1. 📤 Upload your resume (**PDF format**)
+2. 🤖 Resume is analyzed by **Gemini API** for formatting, keywords, and tone
+3. 📈 View your **ATS score** and **personalized suggestions**
+4. 📝 (Optional) Paste a **job description** for resume-vs-job matching
 
-📁 Export improved resume
-📊 Resume vs multiple job descriptions
-📝 In-app editing and history tracking
-🌐 Multi-language support
+---
 
-🤝 Contributing
-Pull requests are welcome! Improve the UI, add features, or optimize the analysis engine — fork it, clone it, and start contributing. Issues and suggestions are appreciated!
+## ✅ Perfect For
 
+- 🎓 **Students & Freshers**  
+- 💼 **Job Seekers**  
+- 🎯 **Resume Coaches**  
+- 🏫 **College Placement Cells**
+
+---
+
+## 💡 Future Scope
+
+- 📁 Export improved resume as PDF  
+- 📊 Compare resume against **multiple job descriptions**  
+- 📝 In-app editing & suggestion history  
+- 🌐 Multi-language support
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+Improve the UI, add new features, or enhance the AI logic.
+
+**How to contribute:**
+
+1. Fork the repo  
+2. Clone it locally  
+3. Create your feature branch (`git checkout -b feature-name`)  
+4. Commit your changes and push (`git push origin feature-name`)  
+5. Open a Pull Request
+
+---
+
+## 🙋‍♀️ Author
+
+**Somiya Rana**  
+🔗 [GitHub](https://github.com/SomiyaRana)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+> _Made with 💼 and 💡 by Somiya Rana_
